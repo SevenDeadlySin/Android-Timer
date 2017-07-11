@@ -35,17 +35,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         //using CountDownTimer
-        new CountDownTimer(1,1) {
+        new CountDownTimer(10000,1000) {
             @Override
             public void onTick(long l) {
-
+                Log.i("Message","One Message was displayed after One Second !");
             }
 
             @Override
             public void onFinish() {
-
+                Log.i("Message","All Message was displayed !");
             }
-        };
+        }.start();
 
     }
 }
